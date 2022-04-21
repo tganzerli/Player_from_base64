@@ -1,21 +1,27 @@
-import 'package:errovideo/stores/core_store.dart';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
+import 'package:errovideo/stores/core_store.dart';
+
 class PlayerPage extends StatefulWidget {
-  const PlayerPage({Key? key}) : super(key: key);
+  final CoreStore coreStore;
+  const PlayerPage({
+    Key? key,
+    required this.coreStore,
+  }) : super(key: key);
 
   @override
   State<PlayerPage> createState() => _PlayerPageState();
 }
 
 class _PlayerPageState extends State<PlayerPage> {
-  CoreStore coreStore = CoreStore();
   late VideoPlayerController controller;
 
   @override
   void initState() {
-    controller = VideoPlayerController.asset(coreStore.videoPath)
+    controller = VideoPlayerController.file(File(widget.coreStore.videoPath))
       ..addListener(() => setState(() {}))
       ..setLooping(false)
       ..initialize().then((_) => controller.play());

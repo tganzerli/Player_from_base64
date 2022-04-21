@@ -26,7 +26,10 @@ class _Page1State extends State<Page1> {
             await coreStore.saveVideo();
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const PlayerPage()),
+              MaterialPageRoute(
+                  builder: (context) => PlayerPage(
+                        coreStore: coreStore,
+                      )),
             );
           },
           child: Container(

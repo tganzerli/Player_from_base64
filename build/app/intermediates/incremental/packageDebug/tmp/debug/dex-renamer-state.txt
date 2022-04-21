@@ -1,4 +1,4 @@
-#Wed Apr 20 12:07:43 BRT 2022
+#Wed Apr 20 14:05:06 BRT 2022
 base.0=/Users/macpro-thiago/Documents/Progs/errovideo/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
