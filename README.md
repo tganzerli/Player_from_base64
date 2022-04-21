@@ -1,13 +1,10 @@
-# Resumo do erro:
+# Player video from base64
 
-Ao tentar rodar um vídeo que esta localizado no diretorio do aplicativo. Recebo os seguintes erro:
-- Accessing hidden method Landroid/media/AudioTrack;->getLatency()I (greylist, reflection, allowed)
-- Access denied finding property "vendor.display-size"
-- registerTetheringEventCallback:com.example.errovideo
+Run a video through a base64 file.
 
-## Como estruturei este exemplo
+## File structure
 
-- page1.dart => Apenas uma pagina para inicialização, nela contém apenas um botão para inicializar o exemplo
-- player_page.dar => Pagina contendo o video player.
-- video_base64.dart => Vídeo codificado em base64, para testar a criação do video no diretório do aplicativo.
-- core_store.dart => Contem a função que descodifica o video e cria o diretório / arquivo mp4. 
+- start_page.dart => Only one page to start! It contains only one button to start.
+- player_page.dar => Page that is a video player.
+- video_base64.dart => Base64 encoded video.
+- core_store.dart => Which contains the decoder and the file create function.
