@@ -2,14 +2,14 @@ import 'package:errovideo/page/player_page.dart';
 import 'package:errovideo/stores/core_store.dart';
 import 'package:flutter/material.dart';
 
-class Page1 extends StatefulWidget {
-  const Page1({Key? key}) : super(key: key);
+class Start extends StatefulWidget {
+  const Start({Key? key}) : super(key: key);
 
   @override
-  State<Page1> createState() => _Page1State();
+  State<Start> createState() => _StartState();
 }
 
-class _Page1State extends State<Page1> {
+class _StartState extends State<Start> {
   CoreStore coreStore = CoreStore();
 
   @override

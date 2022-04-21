@@ -20,10 +20,6 @@ class CoreStore {
     videoPath = '${_videoPath.path}/teste.mp4';
     final decodedBytes = base64Decode(base64.video);
     var fileVideo = File(videoPath);
-    await fileVideo
-      ..writeAsBytesSync(decodedBytes);
-    final bool criuo = await fileVideo.exists();
-    final int tamanho = await fileVideo.length();
-    print('Foi criado: $criuo => Tamanho do arquivo: $tamanho');
+    await fileVideo.writeAsBytes(decodedBytes);
   }
 }
