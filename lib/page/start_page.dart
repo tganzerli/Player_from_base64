@@ -1,6 +1,6 @@
-import 'package:errovideo/page/player_page.dart';
-import 'package:errovideo/stores/core_store.dart';
 import 'package:flutter/material.dart';
+import 'package:playerfrombase64/page/player_page.dart';
+import 'package:playerfrombase64/stores/core_store.dart';
 
 class Start extends StatefulWidget {
   const Start({Key? key}) : super(key: key);

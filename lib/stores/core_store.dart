@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:errovideo/base64/video_base64.dart';
-import 'package:errovideo/services/path_provider_service.dart';
+import 'package:playerfrombase64/base64/video_base64.dart';
+import 'package:playerfrombase64/services/path_provider_service.dart';
 
 class CoreStore {
   PathProvider pathProvider = PathProvider();

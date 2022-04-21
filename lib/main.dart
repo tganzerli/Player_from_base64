@@ -1,5 +1,5 @@
-import 'package:errovideo/page/page1.dart';
 import 'package:flutter/material.dart';
+import 'package:playerfrombase64/page/start_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Erro video',
+      title: 'Player video from base64',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Page1(),
+      home: const Start(),
     );
   }
 }

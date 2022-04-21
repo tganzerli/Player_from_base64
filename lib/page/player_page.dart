@@ -1,9 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:playerfrombase64/stores/core_store.dart';
 import 'package:video_player/video_player.dart';
-
-import 'package:errovideo/stores/core_store.dart';
 
 class PlayerPage extends StatefulWidget {
   final CoreStore coreStore;
